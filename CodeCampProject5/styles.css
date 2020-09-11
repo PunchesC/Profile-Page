@@ -1,0 +1,190 @@
+*{
+	margin:0;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+body{
+  font-family: 'Overpass', sans-serif;
+
+  margin:50px;
+}
+html{
+  background:linear-gradient(#9d9dda, #49495a);
+}
+main{
+  
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height:auto;
+  
+  
+}
+
+h1{
+  padding:25px;
+  font-size: 70px;
+}
+
+p{
+  font-size:20px;
+}
+
+#navbar{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 8%;
+
+}
+
+
+#navbar a{
+  color:white;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+#navbar a:hover{
+  opacity:.35;
+}
+
+#welcome-div{
+  align-self:center;
+  width:50%;
+}
+
+#welcome-section{
+  text-align:center;
+  padding:20px;
+  
+  height:50vh;
+  
+}
+
+#objective-section{
+  
+  padding:10px 30px 20px 30px;
+  border: 2px solid silver;
+}
+
+#objective-section p{
+  padding-left:20px;
+}
+
+#objective-section header{
+  padding:20px 0 20px 0;
+  font-size: 28px;
+}
+
+#projects-intro{
+  text-align:center;
+  margin-top: 250px;
+
+}
+
+#projects{
+  display:grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap:25px;
+  height:100vh;
+}
+
+.project-tile{
+  flex:1;
+  width:65%;
+  padding: 20px 0 3px 0;
+  
+
+}
+
+#project1-background{
+  text-align: center;
+  background:rgba(60, 179,  113, .6);
+  
+}
+#project2-background{
+  text-align: center;
+  background:rgba(60, 179,  113, .6);
+}
+#project3-background{
+  text-align: center;
+  background:rgba(60, 179,  113, .6);
+}
+#project4-background{
+  text-align: center;
+  background:rgba(60, 179,  113, .6);
+}
+
+#project1-background, #project2-background, #project3-background, #project4-background{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#picture1:hover{
+  opacity:.5;
+  cursor:pointer;
+}
+
+#picture2:hover{
+  opacity:.5;
+  cursor:pointer;
+}
+
+#picture3:hover{
+  opacity:.5;
+  cursor:pointer;
+}
+
+#picture4:hover{
+  opacity:.5;
+  cursor:pointer;
+}
+#bottom-header{
+  text-align: center;
+  margin-top:200px;
+  margin-bottom:50px;
+  font-size: 25px;
+}
+#profile-links{
+  display:flex;
+  display:flex;
+  justify-content: space-between;
+  padding: 15px 300px 15px 300px;
+}
+
+#profile-links a{
+  text-decoration: none;
+}
+#profile-links li{
+  list-style-type: none;
+}
+
+.image{
+  width:50px;
+  height:auto;
+  
+}
+
+h2{
+  margin:20px;
+}
+
+footer{
+  text-align: center;
+  margin:20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
