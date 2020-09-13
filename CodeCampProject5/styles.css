@@ -4,10 +4,13 @@
 	box-sizing: border-box;
 }
 
+html, body {width: auto!important; overflow-x: hidden!important} 
+
 body{
   font-family: 'Overpass', sans-serif;
-
   margin:50px;
+  
+  
 }
 html{
   background:linear-gradient(#9d9dda, #49495a);
@@ -20,6 +23,8 @@ main{
   height:auto;
   
   
+  
+  
 }
 
 h1{
@@ -28,7 +33,7 @@ h1{
 }
 
 p{
-  font-size:20px;
+  font-size:1.25rem;
 }
 
 #navbar{
@@ -49,7 +54,7 @@ p{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1;
 }
 
 
@@ -68,6 +73,10 @@ p{
   
   height:50vh;
   
+}
+
+#welcome-section h1{
+  font-size:5rem;
 }
 
 #objective-section{
@@ -95,7 +104,7 @@ p{
   display:grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   grid-gap:25px;
-  height:100vh;
+  height:auto;
 }
 
 .project-tile{
@@ -156,7 +165,6 @@ p{
 }
 #profile-links{
   display:flex;
-  display:flex;
   justify-content: space-between;
   padding: 15px 300px 15px 300px;
 }
@@ -183,8 +191,94 @@ footer{
   margin:20px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+
+
+
+@media (max-width:1000px){
+  #navbar{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    
+
+    
+    
   }
 }
+
+
+@media (max-width:876px){
+  #welcome-div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+  }
+}
+
+@media (max-width:876px){
+  #welcome-section header{
+    display:flex;
+    flex-direction:column;
+  }
+}
+
+@media (max-width:450px){
+  #welcome-section h1{
+    font-size:12vw;
+  }
+}
+
+@media (max-width:450px){
+  #welcome-div p{
+    font-size:6vw;
+  }
+}
+
+
+
+
+
+
+@media(max-width:500px){
+  #projects{
+    display:flex;
+    flex-direction: column;
+    
+  }
+}
+
+@media(max-width:500px){
+  #projects section h3{
+    flex-shrink: 2;
+    
+  }
+}
+
+
+
+ @media (max-width:917px){
+  #bottom-division{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+   
+  
+    
+    
+  }
+}
+
+@media (max-width:917px){
+  #bottom-division ul{
+    display:flex;
+    flex-direction:column;
+    
+    
+    
+    
+    
+  }
+} 
